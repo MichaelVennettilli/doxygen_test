@@ -13,6 +13,10 @@ A sample \mbox{\hyperlink{classTime}{Time}} class.
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classTime_a6a0ea6c4a9eae8b51365c5eda0018554}{Time}} (int timemillis)
+\begin{DoxyCompactList}\small\item\em Brief comment. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classTime_abc699fa48c8b89bdd889b9ec1edc9cd3}{seconds}} ()
+\item 
+void \mbox{\hyperlink{classTime_af5546cb348941eedeab6b69f750cab63}{test}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -24,9 +28,6 @@ static \mbox{\hyperlink{classTime}{Time}} \mbox{\hyperlink{classTime_a4e69815470
 \doxysubsection{Detailed Description}
 A sample \mbox{\hyperlink{classTime}{Time}} class. 
 
-\begin{DoxyAuthor}{Author}
-Future DB Guru
-\end{DoxyAuthor}
 This is a simple class to demonstrate how Doxygen is used. It implements a dummy \mbox{\hyperlink{classTime}{Time}} class. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -36,13 +37,20 @@ This is a simple class to demonstrate how Doxygen is used. It implements a dummy
 \doxysubsubsection{\texorpdfstring{Time()}{Time()}}
 {\footnotesize\ttfamily Time\+::\+Time (\begin{DoxyParamCaption}\item[{int}]{timemillis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Brief comment. 
+
 Constructor that sets the time to a given value.
 
 
 \begin{DoxyParams}{Parameters}
-{\em timemillis} & Number of milliseconds passed since Jan 1, 1970. \\
+{\em timemillis} & Number of milliseconds.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyNote}{Note}
+this is a note. 
+\end{DoxyNote}
 
 
 \doxysubsection{Member Function Documentation}
@@ -57,7 +65,24 @@ Get the current time.
 \begin{DoxyReturn}{Returns}
 A time object set to the current time. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classTime_abc699fa48c8b89bdd889b9ec1edc9cd3}\label{classTime_abc699fa48c8b89bdd889b9ec1edc9cd3}} 
+\index{Time@{Time}!seconds@{seconds}}
+\index{seconds@{seconds}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{seconds()}{seconds()}}
+{\footnotesize\ttfamily double Time\+::seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Returns the time in seconds using $ t_{\text{milli}}/1000 $
+
+\begin{DoxyReturn}{Returns}
+Returns the time in seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTime_af5546cb348941eedeab6b69f750cab63}\label{classTime_af5546cb348941eedeab6b69f750cab63}} 
+\index{Time@{Time}!test@{test}}
+\index{test@{test}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily void Time\+::test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Testing documentation from comment with function initialization outside of class. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
