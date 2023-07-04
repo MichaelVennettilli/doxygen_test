@@ -1,8 +1,3 @@
-2
-Example using Doxygen
-Here is a sample .h file commented with Doxygen 1 using the JavaDoc style of formatting.
-(You can use other styles of documentation with Doxygen, but the JavaDoc style is the most
-popular.)
 /**
 * @file
 * @author Jan Doe <jandoe@example.com>
